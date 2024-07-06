@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 권한 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="자기야"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/app_icon_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DatingCourse"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".PaymentManagement"
+            android:exported="false" />
+        <activity
+            android:name=".MemberShipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".PointItem"
+            android:exported="false" />
+        <activity
+            android:name=".MyCourse"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".PostMaking"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".RandomActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".RandomActivity2"
+            android:exported="true"
+            android:theme="@style/Theme.DatingCourse2"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MBTI"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MBTI_map"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".GuChoose"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".BoardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".info"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".infos"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".Cafe"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".Comments"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".RecycleActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MyPostActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".CommentsAdapter"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".PostEditActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".UserAccount"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name="kr.co.bootpay.BootpayInnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultSearchKeyword"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".FragHome"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".FragMyPage"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".FragLocation"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".EditMyInfoActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".List_Layout"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".PlaceList"
+            android:label="PlaceList"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MapChoiceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MapConnectActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".CourseListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".ImageDisplayActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".MyCouponActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".CourseInfo"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".CourseMakingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="a19f252bb5da932bbbc67f93963b8f0e" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5296145233957611~7957961272" />
+    </application>
+
+</manifest>

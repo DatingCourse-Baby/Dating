@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_200">#FC86CD</color>
+    <color name="pink_500">#FF6591</color>
+    <color name="pink_700">#FF4178</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_200">#FC86CD</color>
+    <color name="purple_500">#FF6591</color>
+    <color name="purple_700">#FF4178</color>
+    <color name="gray_stroke">#B1B1B1</color>
+
+    <color name="list_search_edit_frame">#FF0063</color>
+
+    <color name="navigation_color_action_Home">#6200EE</color>
+    <color name="navigation_color_action_Community">#E94E8C</color>
+    <color name="navigation_color_action_Location">#E6A919</color>
+    <color name="navigation_color_action_MyPage">#1194AA</color>
+
+    <color name="selected_icon_color_home">#6200EE</color> <!-- Red color for selected state -->
+
+    <color name="selected_icon_color_community">#C9379D</color> <!-- Red color for selected state -->
+
+    <color name="selected_icon_color_location">#E6A919</color> <!-- Red color for selected state -->
+
+    <color name="selected_icon_color_mypage">#1194AA</color> <!-- Red color for selected state -->
+
+</resources>

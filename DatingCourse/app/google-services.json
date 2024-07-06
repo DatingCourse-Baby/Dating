@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7071014770",
+    "project_id": "datingcourse-e1f6b",
+    "storage_bucket": "datingcourse-e1f6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7071014770:android:91e6d5536f0a619faf07eb",
+        "android_client_info": {
+          "package_name": "com.example.datingcourse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7071014770-og21vj3b63q1vmcmrptocgdiia8fven0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAclYhxSLe4e7TCE_16oVW1chKvLw6tCzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7071014770-og21vj3b63q1vmcmrptocgdiia8fven0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

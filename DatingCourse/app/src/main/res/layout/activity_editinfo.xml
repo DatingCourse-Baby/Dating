@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMyInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--                android:src="@drawable/user"-->
+                <!--                android:background="#FFFFFF"-->
+                <!--                android:scaleType="fitXY"-->
+                <TextView
+                    android:id="@+id/nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="닉네임"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/changePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 사진 변경"
+                android:textSize="16sp"
+                android:backgroundTint="@color/white"
+                android:textColor="#000000"
+                app:strokeColor="#FF5D7D"
+                app:strokeWidth="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp">
+
+                <!--Nick_name-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="#F4F4F4"
+                    app:boxBackgroundMode="outline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/changeNick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/id"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#FF6591"
+                        android:hint="닉네임 변경" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/ed_id"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/check_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="중복 확인"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:strokeColor="#FFFFFF"
+                        app:strokeWidth="1dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/save_MyInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="50dp"
+                        android:text="저장"
+                        android:elevation="6dp"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/check_nickname"
+                        app:strokeColor="#FFFFFF"
+                        app:strokeWidth="2dp" />
+
+                    <Button
+                        android:id="@+id/go_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/white"
+                        android:text="홈으로 >>"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/save_MyInfo"
+                        app:strokeColor="#FF5D7D"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:id="@+id/remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="회원을 탈퇴하고 싶으신가요?"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#000000"
+                        app:strokeColor="#FF5D7D"
+                        app:strokeWidth="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/go_main"
+                        app:layout_constraintHorizontal_bias="0.2"
+                        android:layout_marginTop="40dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/remove_Info"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:text="회원 탈퇴하기"
+                        android:textColor="#FF1010"
+                        android:textSize="18sp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/remove"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/go_main"
+                        android:layout_marginTop="40dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

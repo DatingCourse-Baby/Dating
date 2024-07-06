@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 텍스트 뷰 왼쪽 부분의 둥근 모서리 배경 -->
+    <item android:right="60dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- 배경 색상 -->
+            <corners android:topLeftRadius="30dp"
+                android:bottomLeftRadius="30dp" /> <!-- 모서리 둥글기 설정 -->
+        </shape>
+    </item>
+    <!-- 텍스트 뷰 오른쪽 부분의 둥근 모서리 배경 -->
+    <item android:left="60dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- 배경 색상 -->
+            <corners android:topRightRadius="30dp"
+                android:bottomRightRadius="30dp" /> <!-- 모서리 둥글기 설정 -->
+        </shape>
+    </item>
+</layer-list>

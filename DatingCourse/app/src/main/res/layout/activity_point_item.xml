@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="멤버십 가입하면\n적립 포인트가"
+            android:textSize="13sp"
+            android:textColor="#3A3A3A"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5배!!"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/txt2"
+            app:layout_constraintTop_toBottomOf="@id/txt2"
+            android:layout_marginStart="12dp"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            app:layout_constraintStart_toEndOf="@id/txt3"
+            app:layout_constraintTop_toTopOf="@id/txt3"
+            app:layout_constraintBottom_toBottomOf="@id/txt3"
+            android:background="@drawable/cirline"
+            android:backgroundTint="@color/pink_500"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/txt1"
+            app:layout_constraintStart_toStartOf="@id/txt1"
+            android:text=" .  .  . "
+            android:textColor="#FF5D7F"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포인트 상점"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line_divider_"
+            android:backgroundTint="@color/pink_500"
+            app:layout_constraintTop_toBottomOf="@id/txt3"
+            app:layout_constraintStart_toStartOf="@id/txt3"/>
+        <View
+            android:layout_width="65dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line_divider_"
+            android:backgroundTint="@color/pink_500"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintTop_toBottomOf="@id/txt3"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/point"
+            app:layout_constraintStart_toEndOf="@id/txt1"
+            app:layout_constraintTop_toTopOf="@id/txt1"
+            app:layout_constraintBottom_toBottomOf="@id/txt1"
+            android:layout_marginBottom="35dp"
+            android:layout_marginStart="20dp"/>
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/point"
+            app:layout_constraintStart_toEndOf="@id/txt1"
+            app:layout_constraintTop_toTopOf="@id/txt1"
+            app:layout_constraintBottom_toBottomOf="@id/txt1"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/point_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="0"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ima_point"/>
+
+        <ImageView
+            android:id="@+id/ima_point"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/point"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/gar1"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/garland"/>
+
+        <ImageView
+            android:id="@+id/gar2"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gar1"
+            android:background="@drawable/garland"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="16dp"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</RelativeLayout>

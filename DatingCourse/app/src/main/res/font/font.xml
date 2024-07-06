@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:font="@font/hippyfont"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/squa"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/bi"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/gmarket"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/sea"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/nasqua"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/nam"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+    <font
+        android:font="@font/nas"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+
+</font-family>

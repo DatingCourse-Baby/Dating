@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragMyPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="399dp"
+                    android:layout_height="330dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_mypage_squa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_height="140dp"
+                    android:layout_width="140dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:background="@drawable/background_circle_pofile_small"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/member_yes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toStartOf="@id/nick"
+                    app:layout_constraintBottom_toBottomOf="@id/nick"
+                    app:layout_constraintTop_toTopOf="@id/nick"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/mem"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/nick"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <TextView
+                        android:id="@+id/my_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="내 포인트 : "
+                        app:layout_constraintEnd_toStartOf="@id/point"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:hint="0"
+                        app:layout_constraintStart_toEndOf="@id/my_point"
+                        app:layout_constraintTop_toTopOf="@id/my_point"
+                        app:layout_constraintBottom_toBottomOf="@id/my_point"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:layout_constraintStart_toEndOf="@id/point"
+                        app:layout_constraintTop_toTopOf="@id/point"
+                        app:layout_constraintBottom_toBottomOf="@id/point"
+                        android:layout_marginStart="7dp"
+                        android:background="@drawable/point"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF">
+
+                <Button
+                    android:id="@+id/myInfo"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="프로필 수정"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/pencil_mypage"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/myWrite"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="내가 작성한 글"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/write"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/myInfo"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/myCourse"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="내 코스"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/here"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/myWrite"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/btn_coupon"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="내 쿠폰함"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/coupon"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/myCourse"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/btn_store"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="포인트 상점가기"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/store"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_coupon"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/btn_membership"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="멤버십 가입하기"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:icon="@drawable/member"
+                    app:iconTint="#F4447C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_store"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="0.3dp" />
+
+                <Button
+                    android:id="@+id/logOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="로그아웃"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_membership"
+                    app:strokeColor="#D8D4D6"
+                    app:strokeWidth="1dp" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
